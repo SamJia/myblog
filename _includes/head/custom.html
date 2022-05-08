@@ -1,3 +1,27 @@
 <!-- start custom head snippets -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css?v=4.0.26" >
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?v=4.0.26"></script>
 
+<script src="{{ _sources.jquery }}"></script>
+<script>
+  // 自动添加图片属性
+  $(document).ready(function() {
+    $(".zoom").attr('data-fancybox', 'gallary').css('cursor', 'zoom-in');
+  });
+
+  // 设置缩放样式
+  Fancybox.bind('[data-fancybox="gallary"]', {
+  Image: {
+    zoom: true,
+    Panzoom: {
+      zoomFriction: 0.7,
+      maxScale: function () {
+        return 5;
+      },
+    },
+  },
+  showClass: "fancybox-zoomIn",
+  hideClass: "fancybox-zoomOut",
+});
+</script>
 <!-- end custom head snippets -->
