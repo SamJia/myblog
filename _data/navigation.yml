@@ -13,6 +13,12 @@ header:
     url: /
   - titles:
       # @start locale config
+      en      : &EN       projects
+      zh-Hans : &ZH_HANS  项目
+      # @end locale config
+    url: https://www.ytjia.xyz/projects/
+  - titles:
+      # @start locale config
       en      : &EN       publications
       zh-Hans : &ZH_HANS  论文
       # @end locale config
